@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    taskconfig:
+      url: jdbc:sqlserver://10.1.2.110:1433;databaseName=TaskConfig
+      username: TaskConfig
+      password: TaskConfig@qwe
+      driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      initialize: true
+    rabbitmsg:
+      url: jdbc:sqlserver://10.1.12.101:1433;databaseName=152RabbitmqMsg
+      username: sa
+      password: hundsun@1
+      driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      initialize: true
+    taskinfo:
+      url: jdbc:sqlserver://10.1.12.101:1433;databaseName=TASKINFO
+      username: sa
+      password: hundsun@1
+      driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      initialize: true
+
